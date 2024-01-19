@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js"
+    crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header -->
+    <header class = "header">
+        <div class = "container nav-section">
+            <div class = "brand-and-navBtn">
+                <span class = "brand-name">
+                    SOPHIA T. CASTRO
+                </span>
+                <span class = "navBtn flex">
+                    <i class = "fas fa-bars"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class = "top-nav">
+        <ul>
+            <li><a href = "index.html" class = "active">Home</a></li>
+            <li><a href = "projects.html">Projects</a></li>
+        </ul>
+    </nav>
 
     <!-- Photo Gallery Section -->
     <section class="photo-gallery" id="photoGallery">
@@ -14,13 +37,59 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="footer-left">
-            <p>PHOTOGRAPHY BY SOPHIA T. CASTRO</p>
+    <footer id="footer" class="panel">
+        <div class="inner split">
+            <div>
+                <section>
+                    <h2>Hey there, my name is Sophia</h2>
+                    <a>I'm an environmental scientist and Photographer</a>
+                </section>
+                <section>
+                    <h2>Follow me on...<h2>
+                        <ul class="icons">
+                            <li>
+                                <a href="https://www.instagram.com/cstro.film?igsh=MWswcDJnbmV5eXBubA%3D%3D" class="fab fa-instagram">
+                                    <span class="label">Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@sophiatcastro?lang=es" class="fab fa-tiktok">
+                                    <span class="label">Tiktok</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/sophtheok/" class="fab fa-linkedin">
+                                    <span class="label">LinkedIn</span>
+                                </a>
+                            </li>
+                        </ul>
+                </section>
+                <p class="copyright">
+                    &copy; Sophia T. Castro. Design GPR
+                </p>
+            </div>
+            <div>
+                <section>
+                    <h2>Get in touch</h2>
+                    <form class="gform" method="post" data-email="sophia.theoktisto@gmail.com" action="https://script.google.com/macros/s/AKfycbz_NRSFopvsQDo9v4ujuQKbM-vDa419Q35IPFmDnNwwRyObnnBKiJ2EuZhGqvs58dav/exec">
+                        <div class="field half first">
+                            <input type="text" name="name" id="name" placeholder="Name"/>
+                        </div>
+                        <div class="field half">
+                            <input type="text" name="email" id="email" placeholder="Email"/>
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send" class="special"/></li>
+                            <li><input type="reset" value="Reset"/></li>
+                        </ul>
+                    </form>
+                </section>
+            </div>
         </div>
-        <div class="footer-right">
-            <a href="#about">ABOUT</a>
-        </div>
+        
     </footer>
 
     <!-- Include external JavaScript file -->
